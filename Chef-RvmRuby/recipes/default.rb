@@ -34,11 +34,8 @@ bash 'install_rvm' do
    cd
    source /etc/profile.d/rvm.sh
    rvm get head
-   sleep 10
    rvm requirements
-   sleep 10
    rvm install 2.3.0
-   source /etc/profile.d/rvm.sh
   EOH
 end
 
